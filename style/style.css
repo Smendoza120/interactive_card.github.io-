@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+.main-container {
+  width: 375px;
+  margin: auto;
+}
+.main-container__background-section {
+  height: 240px;
+  position: relative;
+  background-image: url("../images/bg-main-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-container__form-section {
+  padding: 90px 24px 45px;
+}
+@media (min-width: 1115px) {
+  .main-container {
+    width: 100vw;
+    display: flex;
+  }
+  .main-container__background-section {
+    background: url(../images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    height: 900px;
+    width: 900px;
+  }
+  .main-container__form-section {
+    padding: 90px 50px 45px;
+  }
+}
+
+.card {
+  padding: 20px;
+  width: 288px;
+  height: 160px;
+  color: hsl(0deg, 0%, 100%);
+  padding: 20px;
+  background-image: url("../images/bg-card-front.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 126px;
+  left: 15px;
+  letter-spacing: 2px;
+  z-index: 1;
+}
+@media (min-width: 1115px) {
+  .card {
+    width: 450px;
+    height: 250px;
+  }
+}
+@media (min-width: 1115px) {
+  .card {
+    top: 187px;
+    left: 167px;
+  }
+}
+.card__logo {
+  width: 55px;
+  margin-bottom: 30px;
+}
+.card__numbers {
+  margin-bottom: 15px;
+}
+.card__data {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.6em;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+}
+@media (min-width: 1115px) {
+  .card__logo {
+    width: 85px;
+    margin-bottom: 70px;
+  }
+  .card__numbers {
+    font-size: 1.6em;
+    margin-bottom: 25px;
+  }
+  .card__data {
+    font-size: 0.8em;
+    width: 380px;
+  }
+}
+
+.card__back {
+  width: 288px;
+  height: 160px;
+  color: hsl(0deg, 0%, 100%);
+  padding: 20px;
+  background-image: url("../images/bg-card-back.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 38px;
+  left: 70px;
+  letter-spacing: 2px;
+}
+@media (min-width: 1115px) {
+  .card__back {
+    width: 450px;
+    height: 250px;
+  }
+}
+@media (min-width: 1115px) {
+  .card__back {
+    top: 470px;
+    left: 260px;
+  }
+}
+.card__back-cvc {
+  text-align: right;
+  margin: 49px 11px 0px 14px;
+  font-size: 0.7em;
+}
+@media (min-width: 1115px) {
+  .card__back-cvc {
+    font-size: 1em;
+    margin: 89px 28px 0;
+  }
+}
+
+.form__label {
+  text-transform: uppercase;
+  display: block;
+  font-size: 0.65em;
+  font-weight: bold;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+  color: hsl(278deg, 68%, 11%);
+}
+.form__input {
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid hsl(270deg, 3%, 87%);
+  padding-left: 10px;
+  margin-bottom: 18px;
+  font-size: 1em;
+  outline: none;
+}
+.form__input::-moz-placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+.form__input:-ms-input-placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+.form__input::placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+.form__date-cvc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 16px;
+}
+.form__date {
+  display: flex;
+  gap: 10px;
+}
+.form__submit, .thanks-section__button {
+  width: 100%;
+  height: 50px;
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(278deg, 68%, 11%);
+  border-radius: 8px;
+  border: none;
+  font-size: 1em;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 1px;
+}
+.form__submit:hover, .thanks-section__button:hover {
+  cursor: pointer;
+}
+@media (min-width: 1115px) {
+  .form {
+    width: 385px;
+    margin-top: 180px;
+  }
+  .form__input {
+    margin-bottom: 40px;
+  }
+}
+
+.error {
+  color: hsl(0deg, 100%, 66%);
+  margin: -10px 0 18px;
+  font-size: 0.6em;
+}
+
+.form__errors-container {
+  display: flex;
+  gap: 5px;
+}
+
+.form__errors-container div {
+  width: 100px;
+  text-align: center;
+}
+
+.form__label {
+  text-transform: uppercase;
+  display: block;
+  font-size: 0.65em;
+  font-weight: bold;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+  color: hsl(278deg, 68%, 11%);
+}
+.form__input {
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid hsl(270deg, 3%, 87%);
+  padding-left: 10px;
+  margin-bottom: 18px;
+  font-size: 1em;
+  outline: none;
+}
+.form__input::-moz-placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+.form__input:-ms-input-placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+.form__input::placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+.form__date-cvc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 16px;
+}
+.form__date {
+  display: flex;
+  gap: 10px;
+}
+.form__submit, .thanks-section__button {
+  width: 100%;
+  height: 50px;
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(278deg, 68%, 11%);
+  border-radius: 8px;
+  border: none;
+  font-size: 1em;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 1px;
+}
+.form__submit:hover, .thanks-section__button:hover {
+  cursor: pointer;
+}
+@media (min-width: 1115px) {
+  .form {
+    width: 385px;
+    margin-top: 180px;
+  }
+  .form__input {
+    margin-bottom: 40px;
+  }
+}
+
+.error {
+  color: hsl(0deg, 100%, 66%);
+  margin: -10px 0 18px;
+  font-size: 0.6em;
+}
+
+.form__errors-container {
+  display: flex;
+  gap: 5px;
+}
+
+.form__errors-container div {
+  width: 100px;
+  text-align: center;
+}
+
+.thanks-section {
+  display: none;
+  font-family: "Space Grotesk", sans-serif;
+}
+.thanks-section__img {
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.thanks-section__title {
+  text-align: center;
+  font-weight: 500;
+  color: hsl(278deg, 68%, 11%);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.thanks-section__text {
+  text-align: center;
+  color: hsl(279deg, 6%, 55%);
+  font-size: 1.1em;
+  margin-bottom: 24px;
+}
+@media (min-width: 1115px) {
+  .thanks-section {
+    width: 385px;
+    margin-top: 180px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+}/*# sourceMappingURL=style.css.map */

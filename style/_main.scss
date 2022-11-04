@@ -1,0 +1,31 @@
+@import 'variables';
+
+.main-container{
+    width: 375px;
+    margin: auto;
+    &__background-section{
+        height: 240px;
+        position: relative;
+        background: {
+            image: url('../images/bg-main-mobile.png');
+            size: cover;
+            repeat: no-repeat;
+        };
+    }
+    &__form-section{
+        padding: 90px 24px 45px;
+    }
+    @media (min-width: 1115px) {
+        width: 100vw;
+        display: flex;
+        &__background-section{
+            background: url(../images/bg-main-desktop.png);
+            background-repeat: no-repeat;
+            height: 900px;
+            width: 900px;
+        }
+        &__form-section{
+            padding: 90px 50px 45px;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import 'form';
+@import 'variables';
+
+.thanks-section{
+    display: none;
+    font-family: $Font;
+    &__img{
+        display: block;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    &__title{
+        text-align: center;
+        font-weight: 500;
+        color: $VeryDarkViolet;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+    &__text{
+        text-align: center;
+        color: $DarkGrayishViolet;
+        font-size: 1.1em;
+        margin-bottom: 24px;
+    }
+    &__button{
+        @extend .form__submit;
+    }
+    @media (min-width: 1115px){
+        width: 385px;
+        margin-top: 180px;
+    }
+}

@@ -1,0 +1,25 @@
+@mixin card($url) {
+    width: 288px;
+    height: 160px;
+    color: $White;
+    padding: 20px;
+    background: {
+        image: url($url);
+        repeat: no-repeat;
+        size: contain;
+    }
+    @media (min-width: 1115px){
+        width: 450px;
+        height: 250px;
+    }
+}
+
+@mixin position ($m-top, $m-left, $d-top, $d-left) {
+    position: absolute;
+    top: $m-top;
+    left: $m-left;
+    @media (min-width: 1115px){
+        top: $d-top;
+        left: $d-left;
+    }
+}
